@@ -34,11 +34,10 @@ function displayResults(jsonObj) {
  console.log(jsonObj);
 
   $('#results-list').empty();
-
   for (let i=0; i < jsonObj.data.length; i++ ){
     $('#results-list').append(
       `<li><h3>${jsonObj.data[i].fullName}</h3>
-      <p>${jsonObj.data[i].description} Visit us here!<a href=${jsonObj.data[i].url}>${jsonObj.data[x].url}</a></p>
+      <p>${jsonObj.data[i].description} Visit us here!<a href=${jsonObj.data[i].url}>${jsonObj.data[i].url}</a></p>
       </li>`
     )};
   
